@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Race the black cat</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Racing Game</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<bodysss
-<h1>Race the black cat</h1>
-<div id="game-area">
-    <img id="track" src="assets/track.jpg" alt="Track"/>
-    <img id="player" src="assets/player.png" alt="Player"/>
-    <img id="cat" src="assets/cat.png" alt="Black Cat"/>
+<body>
+  <div>
+    <div class="game-container" id="track">
+      <div class="player" id="player"></div>
+      <div class="opponent" id="opponent"></div>
+      <div class="finish-line"></div>
+      <div id="countdown"></div>
     </div>
+    <div id="result"></div>
 
-    <div id="mobile-controls">
-        <button id="moveButton">Forward</button>
-        <button id="resetButton">Reset</button>
+    <div class="controls">
+      <button id="restartBtn">🔄 Restart</button>
+      <button id="pauseBtn">⏸ Pause</button>
+      <button id="resumeBtn">▶️ Resume</button>
     </div>
-    <p id="result"></p>
-    <script src="game.js"></script>
+  </div>
+
+  <script src="game.js"></script>
 </body>
 </html>
+
